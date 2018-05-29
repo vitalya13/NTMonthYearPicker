@@ -106,7 +106,7 @@ const NSInteger kMaxYear = 10000;
     // Form list of months
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setLocale:self.locale];
-    _months = [dateFormatter monthSymbols];
+    _months = [dateFormatter standaloneMonthSymbols];
 
     // Form list of years
     [dateFormatter setDateFormat:@"yyyy"];
