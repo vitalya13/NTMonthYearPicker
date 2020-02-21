@@ -307,7 +307,7 @@ numberOfRowsInComponent:(NSInteger)component {
 
     // Set label text & color
     label.text = [(isYearComponent ? _years : _months) objectAtIndex:row];
-    label.textColor = (outOfBounds ? [UIColor grayColor] : [UIColor blackColor]);
+    label.textColor = (outOfBounds ? [pickerView valueForKey:@"textShadowColor"] : [pickerView valueForKey:@"textColor"]);
 
     return label;
 }
